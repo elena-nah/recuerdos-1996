@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#cfc7b6">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Recuerdos 1996">
+  <meta name="description" content="Un diario íntimo con espíritu de los años noventa. Tus recuerdos, siempre contigo.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Recuerdos 1996 — Mi diario</title>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7.5c-2.3-2-5.3-2.2-9-1.5v13c3.8-.7 6.8-.5 9 1.4m0-12.9c2.3-2 5.3-2.2 9-1.5v13c-3.8-.7-6.8-.5-9 1.4m0-12.9v12.9"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="1.2"/><path d="M7 3v4m10-4v4M3 10h18m-13 4h2m4 0h2m-8 4h2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.5 3 6.3 7 .9-5 4.9 1.2 7-6.2-3.3-6.2 3.3 1.2-7-5-4.9 7-.9z"/></symbol>
+    <symbol id="i-dice" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="1"/><circle cx="16" cy="8" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="8" cy="16" r="1"/><circle cx="16" cy="16" r="1"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.6 15.2A9.2 9.2 0 0 1 8.8 3.4 9.2 9.2 0 1 0 20.6 15.2z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="3.5" width="18" height="17" rx="1.5"/><circle cx="8.5" cy="9" r="1.7"/><path d="m4.3 18 5-5 3 3 3.5-4 4 5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 17V4m-5 5 5-5 5 5M4 17v4h16v-4"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5 11-11"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 4h6m-9 3 1 14h10l1-14M10 10v8m4-8v8"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="19" cy="12" r="1.3"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 5 5"/></symbol>
+  </svg>
+
+  <div id="app" class="app-shell">
+    <header class="window-titlebar">
+      <div class="window-identity"><span class="small-flower">✿</span><span>RECUERDOS '96</span><span class="titlebar-label">— Diario personal</span></div>
+      <div class="window-buttons" aria-hidden="true"><span>─</span><span>□</span><span>×</span></div>
+    </header>
+    <div class="app-header">
+      <div class="brand">
+        <button id="menuButton" class="icon-button mobile-only" aria-label="Abrir calendario" title="Calendario"><svg><use href="#i-menu"/></svg></button>
+        <div class="brand-signet" aria-hidden="true">✿</div>
+        <div class="brand-type"><div class="brand-name">Recuerdos<span>1996</span></div><div class="brand-line">UN LUGAR DONDE GUARDAR LOS DÍAS</div></div>
+      </div>
+      <div class="header-actions">
+        <span class="archive-label">ARCHIVO PRIVADO <span>✦</span> VOL. I</span>
+        <button id="randomButton" class="retro-button" title="Ir a una página escrita al azar"><svg><use href="#i-dice"/></svg><span class="action-label">Sorpréndeme</span></button>
+        <button id="themeButton" class="retro-button square" aria-label="Cambiar modo día o noche" title="Modo día / noche"><svg><use href="#i-moon"/></svg></button>
+      </div>
+    </div>
+    <div id="mobileBackdrop" class="mobile-backdrop"></div>
+    <div class="workspace">
+      <aside id="sidebar" class="sidebar" aria-label="Archivo de días">
+        <div class="sidebar-heading"><span><svg><use href="#i-book"/></svg> MI ARCHIVO</span><button id="closeMenuButton" class="icon-button mobile-only" aria-label="Cerrar calendario"><svg><use href="#i-x"/></svg></button></div>
+        <section class="sidebar-group calendar-group">
+          <div class="group-title">CALENDARIO <span class="tiny-ornament">❧</span></div>
+          <div class="month-picker-row"><button id="prevMonth" class="month-arrow" aria-label="Mes anterior">‹</button><label class="month-input-wrap"><span id="monthTitle">Octubre 2026</span><input id="monthInput" type="month" aria-label="Seleccionar mes"></label><button id="nextMonth" class="month-arrow" aria-label="Mes siguiente">›</button></div>
+          <div class="weekdays" aria-hidden="true"><span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+          <div id="calendarGrid" class="calendar-grid"></div>
+          <div class="calendar-legend"><span><i class="legend-dot"></i> Con recuerdos</span><span><i class="legend-star">★</i> Favorito</span></div>
+          <button id="todayButton" class="sidebar-button today-button"><svg><use href="#i-calendar"/></svg> Ir a hoy <span>↗</span></button>
+        </section>
+        <section class="sidebar-group favorites-section">
+          <div class="group-title">MIS PÁGINAS FAVORITAS <span>★</span></div>
+          <div id="favoritesList" class="favorites-list"><p class="empty-help">Tus días favoritos aparecerán aquí.</p></div>
+        </section>
+        <section class="sidebar-group search-section">
+          <label class="group-title" for="searchInput">BUSCAR RECUERDOS</label>
+          <div class="search-box"><svg><use href="#i-search"/></svg><input type="search" id="searchInput" placeholder="Una palabra, un recuerdo…" autocomplete="off"></div>
+          <div id="searchResults" class="search-results" hidden></div>
+        </section>
+        <div class="sidebar-foot"><span>✿</span><small id="diaryCount">0 páginas escritas</small><small>Edición personal · Sin cuentas</small></div>
+      </aside>
+
+      <main class="main-content" id="mainContent">
+        <div class="editor-topline"><div class="breadcrumb">MI DIARIO <span>›</span> <span id="breadcrumbYear">2026</span> <span>›</span> <span id="breadcrumbMonth">OCTUBRE</span></div><div class="edition-stamp">EDICIÓN ORIGINAL · 1996</div></div>
+        <div class="date-navigation"><button id="prevDay" class="day-arrow" aria-label="Día anterior"><svg><use href="#i-arrow"/></svg></button><div class="selected-date"><div id="weekdayLabel" class="selected-weekday">DOMINGO</div><h1 id="selectedDateLabel">25 de octubre de 2026</h1></div><button id="nextDay" class="day-arrow next" aria-label="Día siguiente"><svg><use href="#i-arrow"/></svg></button></div>
+        <div class="editor-toolbar">
+          <div class="toolbar-left">
+            <button id="addPhoto" class="tool-button main-tool"><svg><use href="#i-photo"/></svg><span>Añadir fotos</span></button>
+            <button id="favoriteButton" class="tool-button" aria-pressed="false"><svg><use href="#i-star"/></svg><span>Favorito</span></button>
+          </div>
+          <div class="toolbar-right">
+            <button id="backupButton" class="tool-button" title="Exportar una copia de seguridad"><svg><use href="#i-download"/></svg><span>Copia</span></button>
+            <button id="importButton" class="tool-button" title="Importar copia de seguridad"><svg><use href="#i-upload"/></svg><span>Restaurar</span></button>
+            <button id="helpButton" class="tool-button only-icon" title="Ayuda y privacidad" aria-label="Ayuda y privacidad"><svg><use href="#i-info"/></svg></button>
+          </div>
+        </div>
+        <div class="notebook-wrap">
+          <div class="paper-clip" aria-hidden="true"></div>
+          <article class="diary-paper" aria-label="Página del diario">
+            <div class="paper-margin" aria-hidden="true"></div>
+            <div class="paper-header"><div class="paper-kicker">QUERIDO DIARIO,</div><div class="paper-seal">✿</div></div>
+            <div id="paperContent" class="paper-content">
+              <textarea id="diaryText" spellcheck="true" autocapitalize="sentences" placeholder="Hoy ha sido uno de esos días que merecen quedarse aquí…" aria-label="Escribe tu diario"></textarea>
+              <div id="photoLayer" class="photo-layer" aria-label="Fotografías de este día"></div>
+            </div>
+            <div class="paper-bottom"><span>❦</span><span>CON CARIÑO, PARA EL YO DEL FUTURO</span><span>❦</span></div>
+          </article>
+          <div class="paper-shadow" aria-hidden="true"></div>
+        </div>
+        <div class="footer-status"><div class="save-indicator"><span class="save-dot"></span><span id="saveStatus">Preparando tu diario…</span></div><span class="footer-hint">Las fotos se pueden mover y cambiar de tamaño con el dedo · <button id="privacyButton">Tu privacidad</button></span></div>
+      </main>
+    </div>
+    <footer class="window-statusbar"><span>❀ RECUERDOS 1996 <span class="status-divider">│</span> HECHO PARA RECORDAR</span><span id="storageFooter">GUARDADO EN TU DISPOSITIVO</span></footer>
+  </div>
+  <input id="photosInput" type="file" accept="image/*" multiple hidden>
+  <input id="backupInput" type="file" accept=".json,application/json" hidden>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="helpDialog" class="help-dialog"><div class="dialog-top"><span>✿ Acerca de tu diario</span><button id="closeHelp" class="dialog-close" aria-label="Cerrar">×</button></div><div class="dialog-body"><h2>Los recuerdos son tuyos.</h2><p>Recuerdos 1996 funciona sin cuenta y sin servidores para tus escritos: las páginas y las fotografías se guardan en el almacenamiento local de esta aplicación en tu iPhone.</p><p>Puedes colocar tantas fotografías como permita el espacio disponible en el dispositivo. Tócalas para seleccionarlas, arrástralas para moverlas y usa la esquina inferior derecha para cambiar su tamaño.</p><p><strong>Importante:</strong> si borras la app, sus datos o el almacenamiento del navegador, podrías perder tus páginas. Haz una <strong>copia de seguridad</strong> con frecuencia y guárdala en Archivos o iCloud Drive. Para restaurarla, utiliza «Restaurar».</p><p>Al publicar los archivos de esta app en Netlify o GitHub Pages, solo se publican el programa y su diseño; <strong>no se publican los textos ni las fotos</strong> que escribas después en tu dispositivo.</p><button class="dialog-done" id="dialogDone">Entendido ♡</button></div></dialog>
+  <script src="app.js" defer></script>
+</body>
+</html>

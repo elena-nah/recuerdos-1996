@@ -1,0 +1,17 @@
+{
+  "name": "Recuerdos 1996 — Mi diario",
+  "short_name": "Recuerdos '96",
+  "description": "Diario íntimo vintage. Un lugar donde guardar los días.",
+  "id": "./",
+  "start_url": "./?source=app",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone"],
+  "background_color": "#eee8dc",
+  "theme_color": "#cfc7b6",
+  "lang": "es",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
